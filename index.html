@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TASHAN WIN VIP PREDICTION</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .logo {
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #00ffff;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #00ffff;
+      }
+      to {
+        box-shadow: 0 0 30px #00ffff, 0 0 40px #00ffff;
+      }
+    }
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .join-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px auto;
+    }
+    .rating {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #00ff00;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .features li {
+      font-size: 18px;
+      margin: 10px 0;
+      text-decoration: underline;
+    }
+    .timer {
+      margin: 30px 0;
+      font-size: 24px;
+      color: #00ffff;
+    }
+    .powered {
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.postimg.cc/vTqy21p0/IMG-20250731-143303-949.jpg" alt="Tashan Win Logo" class="logo" />
+    <div class="title">TASHAN WIN VIP PREDICTION</div>
+
+    <a href="https://t.me/+3lB5aKIg9s1lOTM1" class="join-btn" target="_blank">JOIN TELEGRAM CHANNEL</a>
+
+    <div class="rating">
+      Channel Rating: <br />
+      ⭐⭐⭐⭐⭐ (4.9/5)
+    </div>
+
+    <ul class="features">
+      <li>99% Winning</li>
+      <li>Sure Shot Prediction</li>
+      <li>Winning Channel</li>
+    </ul>
+
+    <a href="https://t.me/+3lB5aKIg9s1lOTM1" class="join-btn" target="_blank">JOIN TELEGRAM CHANNEL</a>
+
+    <div class="timer" id="timer">
+      Loading Timer...
+    </div>
+
+    <div class="powered">Powered by Rajan</div>
+  </div>
+
+  <script>
+    // Countdown Timer: set your target date below
+    const targetDate = new Date("August 15, 2025 00:00:00").getTime();
+
+    const timerElement = document.getElementById("timer");
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        timerElement.innerHTML = "00 : 00 : 00 : 00 <br>EXPIRED";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timerElement.innerHTML = 
+        `${String(days).padStart(2, '0')} : ${String(hours).padStart(2, '0')} : ${String(minutes).padStart(2, '0')} : ${String(seconds).padStart(2, '0')}<br>DAYS &nbsp; HOURS &nbsp; MINUTES &nbsp; SECONDS`;
+    };
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  </script>
+</body>
+</html>
